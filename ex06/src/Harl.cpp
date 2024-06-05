@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 07:07:35 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/04 07:40:28 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/05 10:50:17 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,49 +52,45 @@ void    Harl::error()
 void    Harl::complain(std::string level)
 {
     int i = 0;
-    bool check = false;
     std::string call[] = {"debug", "info", "warning", "error"};
     void (Harl::*ptr[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 
     while (i < 4)
     {
         if (level == call[i])
-        {
-            check = true;
-            switch (i)
-            {
-                case 0 :
-                {
-                    (this->*ptr[0])();
-                    (this->*ptr[1])();
-                    (this->*ptr[2])();
-                    (this->*ptr[3])();
-                    break;
-                }
-                case 1 :
-                {
-                    (this->*ptr[1])();
-                    (this->*ptr[2])();
-                    (this->*ptr[3])();
-                    break;
-                }
-                case 2 :
-                {
-                    (this->*ptr[2])();
-                    (this->*ptr[3])();
-                    break;
-                }
-                case 3 :
-                {
-                    (this->*ptr[3])();
-                    break;
-                }
-            }
-        }
+            break;
         i++;
     }
-    if (check == false)
+    switch (i)
     {
-        std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+        case 0 :
+        {
+            (this->*ptr[0])();
+            (this->*ptr[1])();
+            (this->*ptr[2])();
+            (this->*ptr[3])();
+            break;
+        }
+        case 1 :
+        {
+            (this->*ptr[1])();
+            (this->*ptr[2])();
+            (this->*ptr[3])();
+            break;
+        }
+        case 2 :
+        {
+            (this->*ptr[2])();
+            (this->*ptr[3])();
+            break;
+        }
+        case 3 :
+        {
+            (this->*ptr[3])();
+            break;
+        }
+        default :
+            std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+            break;
     }
 }
