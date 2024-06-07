@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 09:26:14 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/05/23 14:37:18 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/07 11:49:36 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,20 +26,16 @@ class Zombie
     public:
         Zombie();
         ~Zombie();
-        void            run();
         std::string     get_name();
         void            set_name(std::string &name);
         void            announce(void);
-        static std::string     protec_getline(std::string str);
-        
+
     private:
         std::string     _name;
 };
 
 Zombie* zombieHorde(int N, std::string name);
-std::string     protec_getline(std::string str);
-bool    check_str(std::string str);
-int    check_input();
+
 
 
 #endif
