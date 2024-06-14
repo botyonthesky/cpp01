@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 07:57:22 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/05/23 08:43:17 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/14 06:28:20 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ class Zombie
     public:
         Zombie(std::string name);
         ~Zombie();
-        std::string get_name();
         void    announce(void);
     private:
         std::string _name;

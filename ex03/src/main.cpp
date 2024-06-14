@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 15:00:10 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/05/24 10:03:50 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/14 07:07:34 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,10 @@ int main()
     club.setType("some other type of club");
     bob.attack();
     std::cout << std::endl;
-    club.setType("crude spiked club");
     HumanB jim("Jim");
+    jim.attack();
+    std::cout << std::endl;
+    club.setType("crude spiked club");
     jim.setWeapon(club);
     jim.attack();
     std::cout << std::endl;

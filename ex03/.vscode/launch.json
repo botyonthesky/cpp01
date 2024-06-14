@@ -1,14 +1,11 @@
 {
 	"configurations": [
 	{
-		"name": "(gdb) sedForLoosers",
+		"name": "(gdb) uselessViolence",
 		"type": "cppdbg",
 		"request": "launch",
-		"program": "${workspaceRoot}/sedForLoosers",
+		"program": "${workspaceRoot}/uselessViolence",
 		"args": [
-			"test.txt",
-			"a",
-			"A",
 		],
 		"stopAtEntry": false,
 		"cwd": "${workspaceRoot}",
@@ -27,7 +24,7 @@
 				"ignoreFailures": true
 			}
 		],
-		"preLaunchTask": "sedForLoosers"
+		"preLaunchTask": "uselessViolence"
 	}
 	]
 }

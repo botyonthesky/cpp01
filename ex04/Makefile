@@ -6,14 +6,14 @@
 #    By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/24 10:08:44 by tmaillar          #+#    #+#              #
-#    Updated: 2024/06/10 08:45:01 by tmaillar         ###   ########.fr        #
+#    Updated: 2024/06/14 07:23:01 by tmaillar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME 			:= sedForLoosers
 
 CXX				:= c++
-CXXFLAGS 		:= -std=c++98 -Wall -Wextra -Werror
+CXXFLAGS 		:= -std=c++98 -g -Wall -Wextra -Werror
 CPPFLAGS		+= -I./include
 CPPFLAGS		+= -MMD -MP -MF $(@:.o=.d)
 
@@ -37,7 +37,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 all:			$(NAME)
 
 $(NAME):		$(OBJ)
-				@echo "$(YELLOW) Compiling $(NAME) $(CXXFLAGS) ...$(END)"
+				@echo "$(YELLOW) Compiling $(NAME) $(CXX) $(CXXFLAGS) ...$(END)"
 				@echo "$(GREEN) $(NAME) compiled successfully.$(END)"
 				@echo "$(YELLOW) Building $(NAME) ...$(END)" 
 				@$(CXX) $(OBJ) -o $(NAME)

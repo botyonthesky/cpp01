@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 08:06:46 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/05/23 11:04:26 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/14 06:40:11 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,10 @@ Zombie::Zombie(std::string name) : _name(name)
 
 Zombie::~Zombie()
 {
-    std::cout << "Destruction the Zombie, name: " << get_name() << std::endl;
-}
-
-std::string Zombie::get_name()
-{
-    return (_name);
+    std::cout << "Destruction of Zombie, name : " << _name << std::endl;
 }
 
 void    Zombie::announce(void)
 {
-    std::cout << get_name() << ": BraiiiiiiinnnzzzZ..." << std::endl;
+    std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

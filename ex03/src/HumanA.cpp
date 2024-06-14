@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 15:00:31 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/05/24 08:54:01 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/14 07:11:20 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,4 @@ void    HumanA::attack() const
     std::cout << _name << " attacks with their " << _Weapon.getType() << std::endl;
 }
 
-
-
-std::string HumanA::get_name() const
-{
-    return (_name);
-}
 

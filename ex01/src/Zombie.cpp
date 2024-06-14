@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 09:22:57 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/07 11:50:53 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/14 06:38:59 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 Zombie::Zombie()
 {
-    std::cout << "Creation" << std::endl;
+    std::cout << "Basic constructor" << std::endl;
 }
-
+Zombie::Zombie(std::string name) : _name(name)
+{
+    std::cout << "Constructor of : " << _name << std::endl;
+}
 Zombie::~Zombie()
 {
-    std::cout << "Destruction of : " << get_name() << std::endl;
+    std::cout << "Destruction of : " << _name << std::endl;
 }
 
 std::string Zombie::get_name()
@@ -34,5 +37,5 @@ void    Zombie::set_name(std::string &name)
 
 void    Zombie::announce(void)
 {
-    std::cout << get_name() << ": BraiiiiiiinnnzzzZ..." << std::endl;
+    std::cout << _name << " :BraiiiiiiinnnzzzZ..." << std::endl;
 }
