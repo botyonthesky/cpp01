@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 09:22:55 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/14 06:43:14 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/14 11:45:29 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ int     main()
 {
     Zombie *horde;
     
-    horde = zombieHorde(5, "Horde");
-    for(int i = 0; i < 5; i++)
+    horde = zombieHorde(15, "Horde");
+    for(int i = 0; i < 15; i++)
         horde[i].announce();
         
     delete [] horde;

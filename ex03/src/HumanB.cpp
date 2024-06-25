@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 15:00:33 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/14 07:10:52 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/14 11:46:34 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 HumanB::HumanB(std::string name) : _name(name)
 {
-    _weapon = NULL;   
+    _weapon = NULL;
 }
 
 HumanB::~HumanB()

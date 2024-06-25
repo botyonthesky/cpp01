@@ -6,7 +6,7 @@
 #    By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/24 13:26:13 by tmaillar          #+#    #+#              #
-#    Updated: 2024/06/10 08:47:09 by tmaillar         ###   ########.fr        #
+#    Updated: 2024/06/14 10:22:56 by tmaillar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 all:			$(NAME)
 
 $(NAME):		$(OBJ)
-				@echo "$(YELLOW) Compiling $(NAME) $(CXXFLAGS) ...$(END)"
+				@echo "$(YELLOW) Compiling $(NAME) $(CXX) $(CXXFLAGS) ...$(END)"
 				@echo "$(GREEN) $(NAME) compiled successfully.$(END)"
 				@echo "$(YELLOW) Building $(NAME) ...$(END)" 
 				@$(CXX) $(OBJ) -o $(NAME)

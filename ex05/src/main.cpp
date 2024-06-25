@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 13:28:40 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/04 07:22:07 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/14 12:00:30 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 int main()
 {
     Harl karen;
-    karen.complain("debug");
+    karen.complain("DEBUG");
+    karen.complain("INFO");
+    karen.complain("WARNING");
+    karen.complain("ERROR");
+    karen.complain("wrong complain");
+
     return (0);
 }
